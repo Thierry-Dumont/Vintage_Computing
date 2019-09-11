@@ -1,0 +1,4 @@
+#!/bin/bash
+marst bair.alg > bair.c
+gcc -O3  bair.c -o bair -l algol
+rm -f *.c *.h
