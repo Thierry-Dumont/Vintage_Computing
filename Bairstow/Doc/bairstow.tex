@@ -1,0 +1,122 @@
+\documentclass[11pt]{amsart}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb,pgfpages}
+\usepackage{graphicx,boxedminipage,color,subcaption,listings,url}
+\usepackage{beramono}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+\usepackage[french,onelanguage]{algorithm2e}
+\usepackage{boxedminipage}
+%\usepackage{fontspec}
+%\setmainfont[Mapping=tex-text]{garamond}
+%\setsansfont[Mapping=tex-text]{garamond}
+%\setmonofont[Scale=0.75]{garamond}
+
+%%\usepackage[absolute,overlay]{textpos}
+%% \setlength{\TPHorizModule}{1mm}
+%% \setlength{\TPVertModule}{1mm}
+\usepackage{tikz}
+
+%\usepackage[french]{babel}
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen=bottom}
+\definecolor{ForestGreen}{rgb}{0.0, 0.27, 0.13}
+%\setbeamercolor{frametitle}{fg = red}
+\lstdefinelanguage{Algogol}%
+  {morekeywords={%
+      return,switch,true,type,typealias,%
+      using,while},%
+   sensitive=true,%
+   alsoother={$},%
+   morecomment=[l]\#,%
+   morecomment=[n]{\#=}{=\#},%
+   morestring=[s]{"}{"},%
+   morestring=[m]{'}{'},%
+}[keywords,comments,strings]%
+\lstset{%
+    language         = Algogol,
+    basicstyle       = \ttfamily,
+    keywordstyle     = \color{blue},
+    stringstyle      = \color{magenta},
+    commentstyle     = \color{ForestGreen},
+    showstringspaces = false,
+    keywordstyle={[2]\color{red}},
+    keywordstyle={[3]\color{green}},
+    keywordstyle={[4]\color{brown}},
+    keywordstyle={[5]\color{gray}},
+}
+\lstset{
+  morekeywords={[2]procedure},
+  morekeywords={integer,real,array,boolean},
+  morekeywords={[3]begin,end},
+  morekeywords={[4]value},
+  morekeywords={[5]proc,toto,bairstow,bairstowquad,bairstowstep},
+}
+
+
+\begin{document}
+
+  \section*{Bairstow's (Sir Leonard Bairstow,
+    1880--1963)}
+
+  \begin{center}
+    \textcolor{blue}{\large How to find roots of a polynomial  $P(x)$
+      with real coefficients 
+        \emph{without using complex arithmetic.}}
+  \end{center}
+   \subsection*{The idea:}    
+
+  search for a quadratic divisor of $P$. If the degree of the quotient $Q$
+  is greater than 2, reiterate with $Q$.
+
+  
+ 
+
+  Given real numbers \textcolor{blue}{$B$} and \textcolor{blue}{$C$},
+  we have:
+
+  $$P(x)= (x^2+\textcolor{blue}{B}x+\textcolor{blue}{C}) Q(x)+ (\textcolor{blue}{R}x+\textcolor{blue}{S}),$$
+
+  This defines a mapping:
+  
+$$\mathcal{F}: \begin{pmatrix}B \\ C  \end{pmatrix}
+\mapsto  \begin{pmatrix}R\\S\end{pmatrix}.$$
+
+  Cancel $\mathcal{F(B,C)}$ using Newton method.
+
+  \subsection*{The beauty of this method:}
+  
+How to compute partial derivatives of  $\mathcal{F}$? This is nice:
+
+Once $P$ as been divided by
+$(x^2+\textcolor{blue}{B}x+\textcolor{blue}{C})$, that is:
+$$P(x)= (x^2+\textcolor{blue}{B}x+\textcolor{blue}{C}) Q(x)+ (\textcolor{blue}{R}x+\textcolor{blue}{S}),$$
+
+just cancel the first variations. This gives for $C$:
+
+$$0 = \frac{\partial P}{\partial C}= (x^2+Bx+C)\frac{\partial
+Q}{\partial C}+ Q(x) +x \frac{\partial R}{\partial C}+\frac{\partial
+S}{\partial C}. $$
+
+Then, you just need to divide $-Q$ by the same quadratic, and get the
+partial derivatives:
+
+$$\textcolor{blue}{-Q(x)=(x^2+Bx+C)\frac{\partial Q}{\partial C}}+\textcolor{red}{x \frac{\partial R}{\partial C}+\frac{\partial
+S}{\partial C}} .$$
+
+For $B$, we get:
+$$\textcolor{blue}{-xQ(x)=(x^2+Bx+C)\frac{\partial Q}{\partial B}}+
+\textcolor{red}{x \frac{\partial R}{\partial B}+\frac{\partial
+S}{\partial B} }.$$
+
+That's all.
+
+
+  
+\end{document}
+ 
