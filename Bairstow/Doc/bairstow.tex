@@ -61,7 +61,7 @@
 
 \begin{document}
 
-  \section*{Bairstow's (Sir Leonard Bairstow,
+  \section*{Bairstow's Method (Sir Leonard Bairstow,
     1880--1963)}
 
   \begin{center}
@@ -80,14 +80,14 @@
   Given real numbers \textcolor{blue}{$B$} and \textcolor{blue}{$C$},
   we have:
 
-  $$P(x)= (x^2+\textcolor{blue}{B}x+\textcolor{blue}{C}) Q(x)+ (\textcolor{blue}{R}x+\textcolor{blue}{S}),$$
+  $$P(x)= (x^2+\textcolor{blue}{B}x+\textcolor{blue}{C})\ Q(x)+ (\textcolor{blue}{R}x+\textcolor{blue}{S}),$$
 
   This defines a mapping:
   
 $$\mathcal{F}: \begin{pmatrix}B \\ C  \end{pmatrix}
 \mapsto  \begin{pmatrix}R\\S\end{pmatrix}.$$
 
-  Cancel $\mathcal{F(B,C)}$ using Newton method.
+  Cancel $\mathcal{F}(B,C)$ using Newton's method.
 
   \subsection*{The beauty of this method:}
   
@@ -95,22 +95,22 @@ How to compute partial derivatives of  $\mathcal{F}$? This is nice:
 
 Once $P$ as been divided by
 $(x^2+\textcolor{blue}{B}x+\textcolor{blue}{C})$, that is:
-$$P(x)= (x^2+\textcolor{blue}{B}x+\textcolor{blue}{C}) Q(x)+ (\textcolor{blue}{R}x+\textcolor{blue}{S}),$$
+$$P(x)= (x^2+\textcolor{blue}{B}x+\textcolor{blue}{C})\ Q(x)+ (\textcolor{blue}{R}x+\textcolor{blue}{S}),$$
 
-just cancel the first variations. This gives for $C$:
+just cancel the first variations of $P$. This gives for $C$:
 
-$$0 = \frac{\partial P}{\partial C}= (x^2+Bx+C)\frac{\partial
+$$0 = \frac{\partial P}{\partial C}= (x^2+Bx+C)\ \frac{\partial
 Q}{\partial C}+ Q(x) +x \frac{\partial R}{\partial C}+\frac{\partial
 S}{\partial C}. $$
 
-Then, you just need to divide $-Q$ by the same quadratic, and get the
+Then, we just need to divide $-Q$ by the same quadratic, and get the
 partial derivatives:
 
-$$\textcolor{blue}{-Q(x)=(x^2+Bx+C)\frac{\partial Q}{\partial C}}+\textcolor{red}{x \frac{\partial R}{\partial C}+\frac{\partial
+$$\textcolor{blue}{-Q(x)=(x^2+Bx+C)\ \frac{\partial Q}{\partial C}}+\textcolor{red}{x \frac{\partial R}{\partial C}+\frac{\partial
 S}{\partial C}} .$$
 
 For $B$, we get:
-$$\textcolor{blue}{-xQ(x)=(x^2+Bx+C)\frac{\partial Q}{\partial B}}+
+$$\textcolor{blue}{-xQ(x)=(x^2+Bx+C)\ \frac{\partial Q}{\partial B}}+
 \textcolor{red}{x \frac{\partial R}{\partial B}+\frac{\partial
 S}{\partial B} }.$$
 
