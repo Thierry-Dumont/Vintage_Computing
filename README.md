@@ -15,5 +15,6 @@ Bairstow's method ,to compute roots of (real) polynomials.
 
 Both are very easy to install on any Linux machine.
 
+Some verifications are made using [SageMath](http://www.sagemath.org/), so install it if you want to check correctness of some results. This is not mandatory!
 
 ## Some comments and material will be posted here, soon.
