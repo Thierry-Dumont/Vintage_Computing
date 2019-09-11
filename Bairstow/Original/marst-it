@@ -1,0 +1,5 @@
+#!/bin/bash
+./trans.py >bairstow-trans.alg
+marst bairstow-trans.alg > a.c
+gcc -O3  a.c -o am -l algol
+rm -f a.c *.h
