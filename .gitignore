@@ -6,3 +6,6 @@ lib*a
 *.so
 *.c
 *.h
+bair
+*trans.alg
+*trans
