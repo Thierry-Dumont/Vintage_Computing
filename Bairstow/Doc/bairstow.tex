@@ -72,9 +72,9 @@
    \subsection*{The idea:}    
 
   search for a quadratic divisor of $P$. If the degree of the quotient $Q$
-  is greater than 2, reiterate with $Q$.
+  is greater or equal 2, reiterate with this procedure with $P=Q$.
 
-  
+  \subsubsection*{How to find a quadratic divisor of $p$?} 
  
 
   Given real numbers \textcolor{blue}{$B$} and \textcolor{blue}{$C$},
@@ -87,11 +87,12 @@
 $$\mathcal{F}: \begin{pmatrix}B \\ C  \end{pmatrix}
 \mapsto  \begin{pmatrix}R\\S\end{pmatrix}.$$
 
-  Cancel $\mathcal{F}(B,C)$ using Newton's method.
+  Just cancel $\mathcal{F}(B,C)$ using Newton's method.
 
   \subsection*{The beauty of this method:}
   
-How to compute partial derivatives of  $\mathcal{F}$? This is nice:
+how to compute the partial derivatives of  $\mathcal{F}$? The idea of
+Bairstow is  nice and simple:
 
 Once $P$ as been divided by
 $(x^2+\textcolor{blue}{B}x+\textcolor{blue}{C})$, that is:
@@ -103,8 +104,8 @@ $$0 = \frac{\partial P}{\partial C}= (x^2+Bx+C)\ \frac{\partial
 Q}{\partial C}+ Q(x) +x \frac{\partial R}{\partial C}+\frac{\partial
 S}{\partial C}. $$
 
-Then, we just need to divide $-Q$ by the same quadratic, and get the
-partial derivatives:
+Then, we just need to divide $-Q$ by the same quadratic $(x^2+Bx+C)$ to get the
+partial derivatives of $R$ and $S$:
 
 $$\textcolor{blue}{-Q(x)=(x^2+Bx+C)\ \frac{\partial Q}{\partial C}}+\textcolor{red}{x \frac{\partial R}{\partial C}+\frac{\partial
 S}{\partial C}} .$$
