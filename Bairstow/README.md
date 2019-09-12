@@ -13,4 +13,4 @@ been written some years before.
  
  _This shows, to my own opinion, the beauty of Algol 60!_
 
-* **Doc/** some documentation on Bairstow's method.
+* **Doc/** a description of Bairstow's method.
