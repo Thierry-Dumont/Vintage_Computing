@@ -16,4 +16,4 @@ Then the code is compiled (actually translated to C, and then compiled).
 
 The executable is **bairstow-trans**
 
-#### This works with *jff*, but *marst-it* gives syntax errors.
+#### This works with *jff-algol*, but *marst-it* gives syntax errors.
