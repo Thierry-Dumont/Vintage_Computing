@@ -1,7 +1,11 @@
 ## Material, and how to use it:
 
 
-* **bair.alg** is the program.
+* **bair.alg** is the program. The is a completely rewritten version, largely inspired by Julia implementation.
+
+The question was: can we use a _modern_ programming style, that is to say with as few gotos as possible, using more procedures.
+
+It turns out that is is possible: here, there is only _one_ goto, to simulate a _break_ in a loop.
 
 ### To compile and run the code:
 
