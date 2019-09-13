@@ -7,7 +7,7 @@ Nowadays, you can just play with **Bairstow/**, an Algol 60 implementation of
 Bairstow's method ,to compute roots of (real) polynomials.
 
 
-### You need to install two compilers:
+#### You need to install two compilers:
 
 * **jff-algol** from [Github](https://github.com/JvanKatwijk/algol-60-compiler),
 
@@ -15,6 +15,6 @@ Bairstow's method ,to compute roots of (real) polynomials.
 
 Both are very easy to install on any Linux machine.
 
-Some verifications are made using [SageMath](http://www.sagemath.org/), so install it if you want to check correctness of some results. This is not mandatory!
+Some verifications of numerical rsults are made using [SageMath](http://www.sagemath.org/), so install it if you want to check correctness of some results. This is *not* mandatory!
 
 ## Some comments and material will be posted here, soon.
