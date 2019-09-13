@@ -4,7 +4,7 @@ initiated by the French CNRS and was published in 1970. Routines should have
 been written some years before.
 
 * **Original/** contains the material from the book (scaned pages), the program
-  extracted from the book and scripts to run it.
+  extracted from the book and scripts to compile it.
 
 * **Julia/** Bairstow's method in julia.
 
