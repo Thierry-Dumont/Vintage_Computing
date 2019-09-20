@@ -13,6 +13,7 @@ as the OCR had a lot of problems with underlined keywords. But the program is ex
    ```
    >jff-algol -F bairstow.alg
    ```
+   The executable file is **bairstow**.
 
 * With **marst** you must first translate the code in english, and then compile.  This is done with the script **marst-it**:
 
