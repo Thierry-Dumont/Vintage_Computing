@@ -9,11 +9,17 @@ as the OCR had a lot of problems with underlined keywords.
 
 * you can try both compilers: **jff-algol** and **marst**.
 
-* There are 2 sripts for this: **jff** and **marst-it**.
+ * With **jff-algol**, just do:
+   ```
+   >jff-algol -F bairstow.alg
+   ```
 
-Both first translate bairstow.alg in bairstow-trans.alg, just changing the french keywords into english ones.
-Then the code is compiled (actually translated to C, and then compiled).
+* With **marst** you must first translate the code in english, and then compile.  This is done with the script **marst-it**:
 
-The executable is **bairstow-trans**
+  ```
+   >./marst-it  bairstow.alg
+  ```
+
+
 
 #### This works with **jff-algol**, but **marst-it** gives syntax errors.
