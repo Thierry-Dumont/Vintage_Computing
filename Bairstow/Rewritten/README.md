@@ -1,7 +1,7 @@
 ## Material, and how to use it:
 
 
-* **bair.alg** is the program. The is a completely rewritten version, largely inspired by Julia implementation.
+* **bairstow.alg** is the program. The is a completely rewritten version, largely inspired by Julia implementation.
 
 The question was: can we use a _modern_ programming style, that is to say with as few gotos as possible, using more procedures.
 
@@ -10,13 +10,22 @@ It turns out that is is possible: here, there is only _one_ goto, to simulate a 
 ### To compile and run the code:
 
 * you can try both compilers: **jff-algol** and **marst**.
+ 
+   * to use **jff-algol**, just type:
 
-* There are 2 sripts for this: **jff** and **marst-it**.
+     ```
+     jff-algol bairstow.alg
+     ```
 
 
-Both scripts translate **bair.alg** to C, and then compile the result.
+   * to use **marts**, use the script **marst-it**:
+   
+      ```
+      ./marst-itl bairstow.alg
+      ```
 
-The executable is **bair** , in both cases.
+
+The executable is **bairstow** , in both cases.
 
 ### Verify results with SageMath:
 

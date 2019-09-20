@@ -1,3 +1,0 @@
-#!/bin/bash
-jff-algol bair.alg
-rm *.h *.c

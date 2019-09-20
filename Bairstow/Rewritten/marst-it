@@ -1,4 +1,4 @@
 #!/bin/bash
-marst bair.alg > bair.c
-gcc -O3  bair.c -o bair -l algol
+marst bairstow.alg > bairstow.c
+gcc -O3  bairstow.c -o bairstow -l algol
 rm -f *.c *.h
