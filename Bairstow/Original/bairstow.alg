@@ -1,4 +1,4 @@
-begin
+DEBUT
 PROCEDURE BAIRSTOW(N,A,S0,P0,EPS1,EPS2,MAXITER,X,Y,DIVERG) ;
 	  VALEUR N,A ; ENTIER N,MAXITER ; REEL S0,P0,EPS1,EPS2;
 	  TABLEAU A,X,Y ; ETIQUETTE DIVERG ;
@@ -99,20 +99,20 @@ DEBUT
 
 
 ENTIER I,N,MAXITER; REEL S0,P0,EPS1,EPS2 ;
-       comment LIRE(N,MAXITER,S0,P0,EPS1,EPS2) ;
+       COMMENTAIRE LIRE(N,MAXITER,S0,P0,EPS1,EPS2) ;
        N:=4;
        MAXITER:=50;
        S0:=0.0; P0:=0.0; EPS1:=0.000001; EPS2:=0.0; outstring(1,"\n");
      
 DEBUT TABLEAU X,Y[1: N], A[0:N] ;
-      comment POUR I := 0 PAS 1 JUSQUA N FAIRE A[I]:=1.0 ;
+      COMMENTAIRE POUR I := 0 PAS 1 JUSQUA N FAIRE A[I]:=1.0 ;
       A[0]:=-2.; A[1]:=2; A[2]:=1; A[3]:=-2; A[4]:=1; 
       POUR I := 0 PAS 1 JUSQUA N FAIRE outreal(1,A[I]);
 
-      comment POUR I := 0 PAS 1 JUSQUA N FAIRE LIRE(A[I]) ;
+      COMMENTAIRE POUR I := 0 PAS 1 JUSQUA N FAIRE LIRE(A[I]) ;
       BAIRSTOW(N,A,S0,P0,EPS1,EPS2,MAXITER,X,Y,DIVERG);
       outstring(1,"\n");
-      comment POUR I := 1 PAS 1 JUSQUA N FAIRE ECRIRE(I,X[I],Y[I]) ;
+      COMMENTAIRE POUR I := 1 PAS 1 JUSQUA N FAIRE ECRIRE(I,X[I],Y[I]) ;
        POUR I := 1 PAS 1 JUSQUA N FAIRE
           outreal(1,X[I]);
        outstring(1,"\n");
@@ -123,4 +123,4 @@ DEBUT TABLEAU X,Y[1: N], A[0:N] ;
 DIVERG : N :=0;
 outstring(1, " DIVERGENCE BAIRSTOW");
 FINPROG : FIN FIN ;
-end;
+FIN;
