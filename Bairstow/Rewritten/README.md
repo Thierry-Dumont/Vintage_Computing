@@ -14,14 +14,14 @@ It turns out that is is possible: here, there is only _one_ goto, to simulate a 
    * to use **jff-algol**, just type:
 
      ```
-     jff-algol bairstow.alg
+     >jff-algol bairstow.alg
      ```
 
 
    * to use **marts**, use the script **marst-it**:
    
       ```
-      ./marst-itl bairstow.alg
+      >./marst-it bairstow.alg
       ```
 
 
