@@ -3,7 +3,7 @@
 * The **scan[0-2].png** are scanned pages of the book.
 
 * **bairstow.alg** is the program, after treatment by an OCR, and many corrections
-as the OCR had a lot of problems with underlined keywords.
+as the OCR had a lot of problems with underlined keywords. But the program is exactly the same as in the book.
 
 ### To compile and run the code
 
