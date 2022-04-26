@@ -9,4 +9,4 @@
 ./script
 ```
 
-You certainly need a recent version of Julia (say, at least 1.1).
+You certainly need  Julia >=  1.1.
